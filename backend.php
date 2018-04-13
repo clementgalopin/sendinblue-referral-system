@@ -15,9 +15,9 @@ $API_key = "";
 SendinBlue\Client\Configuration::getDefaultConfiguration()->setApiKey('api-key', $API_key);
 $api_instance = new SendinBlue\Client\Api\ContactsApi();
 
-/* L'API SendinBlue est générée par swagger-codegen, qui renvoit par erreur un objet protégé sur la fonction getContactsFromList.
+/* L'API SendinBlue est générée par la version 2.2.3 de swagger-codegen, qui renvoit par erreur un objet protégé sur la fonction getContactsFromList.
 La fonction ci-dessous permet de dupliquer cet objet et de rendre publique la copie pour pouvoir y accéder.
-cf. GitHub : https://github.com/swagger-api/swagger-codegen/issues/6777 */ 
+Le souci a été réglé dans la version 2.3 de swagger-codegen, cf. GitHub : https://github.com/swagger-api/swagger-codegen/issues/6777 */ 
 function _r($o){
 	$obj  = new ReflectionObject($o);
 	$r_obj = $obj->getProperty('container');
